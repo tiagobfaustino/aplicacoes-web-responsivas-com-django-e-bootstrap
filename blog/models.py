@@ -7,3 +7,6 @@ class Post(models.Model):
     subtitle = models.CharField(max_length=255)
     conteudo = models.TextField()
     data_publicacao = models.DateTimeField(default=datetime.now())
+
+    def __str__(self) -> str:
+        return self.titulo
