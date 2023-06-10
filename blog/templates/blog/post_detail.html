@@ -11,7 +11,7 @@
     <h3>{{ post.subtitulo }} - {{ post.autor }}</h3>
 
     <p>
-        {{ post.conteudo }}
+        {{ post.conteudo|safe }}
     </p>
 </body>
 </html>
